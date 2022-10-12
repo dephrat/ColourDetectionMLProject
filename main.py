@@ -14,7 +14,7 @@ data_transform = transforms.Compose([
     ])
 train_dataset = datasets.ImageFolder(root='train_dataset',
                                            transform=data_transform)
-train_dataset_loader = torch.utils.data.DataLoader(training_dataset,
+train_dataset_loader = torch.utils.data.DataLoader(train_dataset,
                                              batch_size=4, shuffle=True,
                                              num_workers=4)
 
@@ -94,6 +94,6 @@ def test(dataloader, model, loss_fn):
 epochs = 5
 for t in range(epochs):
     print(f"Epoch {t+1}\n-------------------------------")
-    train(training_dataset_loader, model, loss_fn, optimizer)
+    train(train_dataset_loader, model, loss_fn, optimizer)
     test(test_dataset_loader, model, loss_fn)
 print("Done!")
