@@ -5,7 +5,7 @@ This project uses a convolutional neural network (CNN) to recognize solid colour
 
 I used a CNN because of its effectiveness in analyzing images. PyTorch was the obvious choice for implementing the CNN, given its wide range of features and resources online. 
 
-The biggest barrier to implementing this project was learning to use PyTorch, as the library was completely new to me when I started this project. Thankfully, PyTorch has extensive documentation available online. I've linked a couple useful resources in the 'Useful resources' section, so check them out if you want a head start making a CNN of your own.
+The biggest barrier to implementing this project was learning to use PyTorch, as the library was completely new to me when I started this project. Thankfully, PyTorch has extensive documentation available online. I've linked a couple useful resources in the 'Useful resources' section, so check them out if you want a head start in making a CNN of your own.
 
 In the future, I hope to implement a friendly user interface to let people easily upload their own custom datasets and classes. I plan to take advantage of the intuitive and scalable nature of the ImageFolder dataset structure to make using this CNN as easy as possible for casual fans of machine learning.
 
