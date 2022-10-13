@@ -7,6 +7,10 @@ import torch.nn.functional as F
 import numpy as np
 import matplotlib.pyplot as plt
 
+epochs = 5
+
+### TRAINING ###
+
 data_transform = transforms.Compose([
         transforms.Resize((224,224)),
         transforms.RandomHorizontalFlip(),
@@ -18,8 +22,9 @@ data_transform = transforms.Compose([
 train_dataset = datasets.ImageFolder(root='data/train_dataset',
                                            transform=data_transform)
 train_dataset_loader = torch.utils.data.DataLoader(train_dataset,
-                                             batch_size=4, shuffle=True,
-                                             num_workers=4)
+                                           batch_size=4, 
+                                           shuffle=True,
+                                           num_workers=4)
 
 # Get cpu or gpu device for training.
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -81,15 +86,18 @@ def train(dataset_loader, model, criterion, optimizer, epochs):
 
     print('Finished Training')
     
-train(train_dataset_loader, model, criterion, optimizer, 5)
+train(train_dataset_loader, model, criterion, optimizer, epochs)
 
 
+
+### TESTING ###
 
 test_dataset = datasets.ImageFolder(root='data/test_dataset',
-                                       transform=data_transform)
+                                           transform=data_transform)
 test_dataset_loader = torch.utils.data.DataLoader(test_dataset,
-                                                 batch_size=4, shuffle=True,
-                                                  num_workers=4)
+                                           batch_size=4, 
+                                           shuffle=True,
+                                           num_workers=4)
 
 correct = 0
 total = 0
@@ -105,4 +113,3 @@ with torch.no_grad():
         correct += (predicted == labels).sum().item()
 
 print(f'Accuracy of the network on the test images: {100 * correct / total} %')
-print(hash_table)
