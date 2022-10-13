@@ -15,12 +15,13 @@ Ensure that you have all the necessary libraries installed. If not, check the 'U
 Download the project, including the data. To run the program, simply run 'main.py' and read the printed output.
 
 ## How to use the project
-The model is trained on the images in 'data/train_dataset', and then tests itself on the images in 'data/test_dataset'.
-To use this model, place your training and testing images in their respective folders and run the program.
-To change the number of training epochs (i.e. iterations through the training data), simply change the epochs variable near the top of 'main.py'. More epochs leads to higher accuracy, at the cost of longer processing time.
+To try this model against your own images, simply add your images to the correct folders in 'data/test_dataset'. Ensure that each class (e.g. yellow, green, etc.) has at least one image in its folder.
 
-Note: The CNN can be easily adapted to train on classes other than colours. To do so, replace the folders inside train_data and test_data with the desired classes and fill the class folders with your training/testing data. 
+To train this model on a different set of images, simply add the desired training material to the correct folders in 'data/train_dataset'. Again, ensure that each class has at least one image in its folder.
 
+The CNN can be easily adapted to train on classes other than colours. To do so, replace the folders inside train_data and test_data with the desired classes and fill the class folders with your training/testing data.
+
+To improve the CNN's accuracy, you can try increasing the number of training epochs (i.e. iterations through the training data). To do so, simply change the epochs variable near the top of 'main.py'. Be aware that more epochs leads to higher accuracy (up to a certain point), but longer processing times.
 
 ## Useful resources
 Building the project:
