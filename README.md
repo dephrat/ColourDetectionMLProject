@@ -1,7 +1,7 @@
 # Colour Detection ML Project
 
 ## Description
-This project uses a convolutional neural network (CNN) to recognize solid colour images, which are stored using an ImageFolder dataset structure. The program itself was written in Python, and I used the PyTorch library to implement the CNN and datasets.
+This project uses a convolutional neural network (CNN) to classify solid colour images, which are stored using an ImageFolder dataset structure. The program itself was written in Python, and I used the PyTorch library to implement the CNN and datasets.
 
 I used a CNN because of its effectiveness in analyzing images. PyTorch was the obvious choice for implementing the CNN, given its wide range of features and resources online. 
 
