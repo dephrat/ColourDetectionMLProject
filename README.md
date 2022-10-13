@@ -27,6 +27,7 @@ To improve the CNN's accuracy, you can try increasing the number of training epo
 Building the project:
 
 https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
+
 https://pytorch.org/tutorials/beginner/data_loading_tutorial.html
 
 Understanding and constructing the datasets:
@@ -36,5 +37,7 @@ https://debuggercafe.com/pytorch-imagefolder-for-training-cnn-models/
 Setting up Python with the requisite libraries:
 
 https://stackoverflow.com/questions/57735701/cant-import-torch-in-jupyter-notebook#:~:text=First%2C%20enter%20anaconda%20prompt%20and,run%20code%20using%20pytorch%20successfully.
+
 https://donaldpinckney.com/books/pytorch/book/ch1-setup/mac.html
+
 https://stackoverflow.com/questions/47726509/unable-to-run-import-scikit-image-in-jupyter-notebook-despite-successful-install
