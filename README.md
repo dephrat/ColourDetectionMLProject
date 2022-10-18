@@ -7,7 +7,7 @@ I used a CNN because of its effectiveness in analyzing images. PyTorch was the o
 
 The biggest barrier to implementing this project was learning to use PyTorch, as the library was completely new to me when I started this project. Thankfully, PyTorch has extensive documentation available online. I've linked a couple useful resources in the 'Useful resources' section, so check them out if you want a head start in making a CNN of your own.
 
-In the future, I hope to implement a friendly user interface to let people easily upload their own custom datasets and classes. I plan to take advantage of the intuitive and scalable nature of the ImageFolder dataset structure to make using this CNN as easy as possible for casual fans of machine learning.
+In the future, I hope to implement a friendly user interface to let people easily upload their own custom datasets and classes. I plan to take advantage of the intuitive and scalable nature of the ImageFolder dataset structure to make using this CNN as easy as possible for casual fans of machine learning. React seems like a promising choice for developing a web interface, but further research is required.
 
 ## How to install and run the project
 The project was written in Jupyter Notebook through a conda environment, but any Python compiler should be fine.
